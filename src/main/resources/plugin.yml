@@ -1,7 +1,7 @@
 name: KingOfTheHill
 version: '${project.version}'
 main: me.gamendecat.kingofthehill.KingOfTheHill
-api-version: 1.18
+api-version: 1.17
 authors: [ GamendeCat ]
 description: King Of The Hill
 website: com.gamendecat.www
