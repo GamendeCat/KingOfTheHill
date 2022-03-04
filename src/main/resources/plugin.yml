@@ -1,0 +1,12 @@
+name: KingOfTheHill
+version: '${project.version}'
+main: me.gamendecat.kingofthehill.KingOfTheHill
+api-version: 1.18
+authors: [ GamendeCat ]
+description: King Of The Hill
+website: com.gamendecat.www
+depend: [PlaceholderAPI]
+commands:
+  koth:
+    description: King Of The Hill Commands
+    usage: /koth help

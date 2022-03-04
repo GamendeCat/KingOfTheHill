@@ -1,0 +1,94 @@
+#This is the time between king of the hill events!
+#In Minutes
+time: 30
+
+#This will represent the item in the menu
+Active: #This is when the koth is active
+  type: "BOOK"
+  displayName: "&cKoth"
+  lore:
+    - "&7Koth is currently active."
+    - "&7If you died you can go back by"
+    - "&7clicking the button again."
+    - ""
+    - "&c-> &7Next koth in 3 hours"
+  glow: true
+Not-Active: #This is when the koth is not active
+  type: "BOOK"
+  displayName: "&cKoth"
+  lore:
+    - "&7Koth will be starting in"
+    - "&7<time>."
+    - ""
+  glow: true
+prepare: #This is between 1 to 60 seconds before starting the event
+  type: "BOOK"
+  displayName: "&cKoth"
+  lore:
+    - "&7Koth will be starting in"
+    - "&7<time>."
+    - ""
+    - "&c-> &7Click to join the koth!"
+  glow: true
+
+#Some basic command messages
+commandHelp: "Invalid usage please do /koth help for more info"
+commandHelpList: "<command>: <usage> - <description>"
+
+#This is how long the player has to stand on the platform/koth to win
+minutes: 1
+#This is the time the event will go on for if no one gets the koth
+stop: 30
+
+#This is the location where the player gets sent when he/she quits during the koth event
+spawn:
+  worldName: world
+  x: 0
+  y: 256
+  z: 0
+
+#These will be the command that will be run when a player wins the event/koth
+command-rewards:
+  - "give <player> Diamond 5"
+  - "give <player> Iron_Ingot 2"
+
+#This is the permission of the command /koth help
+help-permission: "koth.help"
+#This is the permission of the command /koth setup
+setup-permission: "koth.setup"
+#This is the permission of the command /koth start
+start-permission: "koth.start"
+#This will be sent when no maps are available
+no-map: "&cKoth &8-> &eNo Maps Available."
+#This will be sent when starting a game and you give a map in args
+start-game-map: "&cKoth &8-> &eStarted a game &7(Map: <map>)"
+#This will be sent when starting a game
+start-game: "&cKoth &8-> &eStarted a game"
+#This will be sent when opening a menu
+open-menu: "&cKoth &8-> &7Opening Menu"
+#When a player has no permission
+no-permission: "&cNo Permission."
+#This is sent when a player runs a command while playing koth
+no-commands: "&cKoth &8-> &7No commands while playing koth!"
+#This is when a player tries to join koth after it already started
+already-started: "&cKoth &8-> &7Koth already started!"
+#This is sent when you are already in the event and the player tries to join again
+already-in: "&cKoth &8-> &7You are already in the event!"
+#This is sent when you click the item in the menu to get added to the koth
+add-to-event: "&cKoth &8-> &7Adding you to the event."
+#When no player got the koth in time
+not-in-time: "&cKoth &8-> &7No one got it in time!"
+#This is sent when a player gets onto the platform when no one is on it
+currently-winning: "&cKoth &8-> &7<player> is currently winning"
+#This is when the winning player gets knocked of the platform
+knocked-off: "&cKoth &8-> &7<player> got knocked of the platform!"
+#This get sent when a player wins the koth
+player-won: "&cKoth &8-> &e&l<player> &7WON!"
+#This gets sent when its 60 seconds from starting the koth
+sixty-seconds: "&cKoth &8-> &7King Of The Hill is starting in 60 seconds!"
+#This gets sent when its 30 seconds from starting the koth
+thirty-seconds: "&cKoth &8-> &7King Of The Hill is starting in 30 seconds!"
+#This gets sent when its 1-5 seconds from starting the koth
+timer-seconds: "&cKoth &8-> &7King Of The Hill is starting in <timer> seconds!"
+#This gets sent when the koth starts
+starting-now: "&cKoth &8-> &e&lStarting now!"
